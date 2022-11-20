@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "vercel-google-oauth-proxy",
+  "version": "1.2.3",
+  "description": "Protect a static website hosted on Vercel behind Google authentication.",
+  "keywords": [
+    "vercel",
+    "google",
+    "oauth",
+    "proxy",
+    "static",
+    "website",
+    "lambda",
+    "functions"
+  ],
+  "license": "ISC",
+  "author": "Eric Amshukov <eamshukov@gmail.com>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md}\"",
+    "prepack": "tsc --project tsconfig.build.json"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fastify": "^3.18.1",
+    "fastify-cookie": "^5.3.1",
+    "fastify-static": "^4.2.2",
+    "globby": "^11.0.4",
+    "nanoid": "^3.1.23",
+    "ow": "^0.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@vercel/node": "^1.11.1",
+    "prettier": "^2.3.2",
+    "release-it": "^14.10.0",
+    "vercel": "^23.0.1"
+  }
+}
